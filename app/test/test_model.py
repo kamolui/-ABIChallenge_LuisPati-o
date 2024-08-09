@@ -4,12 +4,11 @@ from app.model import MLModel
 
 @pytest.fixture
 def model():
-    # Assuming a model is stored in 'path_to_your_model.pkl'
-    return MLModel(model_path="path_to_your_model.pkl")
+    return MLModel(model_path="app/models/model.pkl")
 
 def test_single_prediction(model):
     # Example input for the model (adjust depending on your actual model input)
-    input_data = np.array([[5.1, 3.5, 1.4, 0.2]])
+    input_data = np.array([[3, 34.5, 0, 0, 7.8292, 1]])
     
     prediction = model.predict(input_data)
     
@@ -19,7 +18,7 @@ def test_single_prediction(model):
 
 def test_batch_prediction(model):
     # Example batch input for the model
-    batch_data = np.array([[5.1, 3.5, 1.4, 0.2], [4.9, 3.0, 1.4, 0.2]])
+    batch_data = np.array([[3, 34.5, 0, 0, 7.8292, 1], [2, 20.4, 1, 0, 2.3471, 0]])
     
     predictions = model.predict_batch(batch_data)
     
