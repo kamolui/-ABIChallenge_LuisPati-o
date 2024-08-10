@@ -38,5 +38,9 @@ This repository contains my solution to the ABI machine learning challenge focus
 └── sonar-project.properties     # Sonar Cloud configuration for code quality checks
 ```
 
+## Architecture
+![image](https://github.com/user-attachments/assets/03273d9c-34a7-44da-a882-a78fbf0a4aac)
+
+
 Thanks to the organizers for the opportunity to demonstrate skills in deploying machine learning models with modern tools and best practices.
 
